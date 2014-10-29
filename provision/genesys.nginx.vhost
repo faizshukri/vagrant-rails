@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    root /vagrant/public;
+    server_name genesys.dev;
+
+    passenger_enabled on;
+    passenger_friendly_error_pages on;
+    passenger_app_env development;
+}
